@@ -7,19 +7,18 @@
 <meta name="description" content="Self-hosted AI assistant with OpenClaw Hardware. Run your own private AI on NVIDIA Jetson Orin Nano. No cloud, no subscriptions. ClawBox: €399.">
 <meta name="keywords" content="self-hosted ai assistant, openclaw ai hardware, private ai assistant, self-hosted ai, openclaw hardware, local ai assistant, personal ai server">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://openclawhardware.dev/self-hosted-ai">
+<link rel="canonical" href="https://self-hosted-ai-assistant.com/">
 <meta property="og:title" content="Self-Hosted AI Assistant – OpenClaw Hardware">
 <meta property="og:description" content="Self-hosted AI assistant on NVIDIA Jetson. Private, local, no subscriptions. €399.">
-<meta property="og:url" content="https://openclawhardware.dev/self-hosted-ai">
+<meta property="og:url" content="https://self-hosted-ai-assistant.com/">
 <meta property="og:image" content="https://openclawhardware.dev/clawbox-1.webp">
 <meta property="og:type" content="product">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Self-Hosted AI Assistant – OpenClaw Hardware">
 <meta name="twitter:description" content="Self-hosted AI on NVIDIA Jetson. Private, local, no subscriptions. €399.">
 <meta name="twitter:image" content="https://openclawhardware.dev/clawbox-1.webp">
-<meta http-equiv="refresh" content="8;url=https://openclawhardware.dev/self-hosted-ai">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Product","name":"ClawBox","description":"Self-hosted AI assistant: OpenClaw on NVIDIA Jetson Orin Nano. 67 TOPS, fully private.","brand":{"@type":"Brand","name":"OpenClaw Hardware"},"image":"https://openclawhardware.dev/clawbox-1.webp","url":"https://openclawhardware.dev/self-hosted-ai","offers":{"@type":"Offer","price":"399","priceCurrency":"EUR","availability":"https://schema.org/PreOrder"}}
+{"@context":"https://schema.org","@type":"Product","name":"ClawBox","description":"Self-hosted AI assistant: OpenClaw on NVIDIA Jetson Orin Nano. 67 TOPS, fully private.","brand":{"@type":"Brand","name":"OpenClaw Hardware"},"image":"https://openclawhardware.dev/clawbox-1.webp","url":"https://self-hosted-ai-assistant.com/","offers":{"@type":"Offer","price":"399","priceCurrency":"EUR","availability":"https://schema.org/PreOrder"}}
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -50,8 +49,41 @@ body{font-family:'Outfit',sans-serif;background:#0f172a;color:#cbd5e1;min-height
 .cta h2{color:#e2e8f0;font-size:1.3rem;margin-bottom:20px}
 .cta a{display:inline-block;padding:16px 40px;background:linear-gradient(135deg,#a78bfa,#7c3aed);color:#fff;text-decoration:none;border-radius:12px;font-size:1.1rem;font-weight:700;transition:transform .2s,box-shadow .2s}
 .cta a:hover{transform:scale(1.05);box-shadow:0 8px 30px rgba(167,139,250,0.3)}
-.redirect{text-align:center;padding:20px;color:#475569;font-size:.8rem}
+.how-it-works{margin:60px auto;max-width:1000px;padding:0 24px}
+.how-it-works h2{color:#e2e8f0;margin-bottom:30px;font-size:1.8rem;text-align:center}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.step{background:#1e293b;border-radius:12px;padding:24px;text-align:center;border:1px solid rgba(167,139,250,0.1)}
+.step-number{display:inline-block;width:40px;height:40px;background:#a78bfa;color:#fff;border-radius:50%;line-height:40px;font-weight:700;margin-bottom:16px}
+.step h3{color:#a78bfa;margin-bottom:12px;font-size:1.1rem}
+.step p{color:#94a3b8;font-size:.95rem}
+.comparison-section{margin:60px auto;max-width:1000px;padding:0 24px}
+.comparison-section h2{color:#e2e8f0;margin-bottom:30px;font-size:1.8rem;text-align:center}
+.comparison-table{width:100%;border-collapse:collapse;background:#1e293b;border-radius:12px;overflow:hidden;border:1px solid rgba(167,139,250,0.1)}
+.comparison-table th{background:#a78bfa;color:#fff;padding:16px;text-align:left;font-weight:600}
+.comparison-table td{padding:16px;border-bottom:1px solid rgba(167,139,250,0.1);color:#94a3b8}
+.comparison-table tr:nth-child(even){background:rgba(167,139,250,0.02)}
+.comparison-table tr:last-child td{border-bottom:none}
+.comparison-table .highlight{color:#a78bfa;font-weight:600}
+.faq-section{margin:60px auto;max-width:800px;padding:0 24px}
+.faq-section h2{color:#e2e8f0;margin-bottom:30px;font-size:1.8rem;text-align:center}
+.faq-item{margin-bottom:16px}
+.faq-item details{background:#1e293b;border-radius:12px;border:1px solid rgba(167,139,250,0.1);overflow:hidden}
+.faq-item summary{padding:20px;cursor:pointer;color:#a78bfa;font-weight:600;font-size:1.05rem;transition:background .2s}
+.faq-item summary:hover{background:rgba(167,139,250,0.05)}
+.faq-item details[open] summary{background:rgba(167,139,250,0.1);border-bottom:1px solid rgba(167,139,250,0.1)}
+.faq-item .faq-content{padding:20px;color:#94a3b8;border-top:1px solid rgba(167,139,250,0.1)}
+.related-section{margin:60px auto;max-width:1000px;padding:40px 24px;background:#1e293b;border-radius:16px;border:1px solid rgba(167,139,250,0.1)}
+.related-section h2{color:#e2e8f0;margin-bottom:30px;font-size:1.5rem;text-align:center}
+.related-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;text-align:center}
+.related-links a{color:#a78bfa;text-decoration:none;padding:12px;border-radius:8px;transition:background .2s,color .2s}
+.related-links a:hover{background:rgba(167,139,250,0.1);color:#c4b5fd}
+@media (max-width: 768px) {
+.comparison-table{font-size:.85rem}
+.comparison-table th,.comparison-table td{padding:10px}
+}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9FY8Q06EX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Q9FY8Q06EX');</script>
 </head>
 <body>
 <section class="shield-hero">
@@ -102,18 +134,189 @@ body{font-family:'Outfit',sans-serif;background:#0f172a;color:#cbd5e1;min-height
 
 <p class="seo-text">Self-hosted AI is the future of privacy. The ClawBox makes it accessible: pre-configured OpenClaw AI hardware with NVIDIA Jetson, ready to run your personal AI assistant. No technical expertise required. Self-hosted AI assistant setup takes minutes, not hours.</p>
 
-<section class="cta">
-<h2>Self-Hosted AI Assistant — €399</h2>
-<a href="https://openclawhardware.dev/self-hosted-ai">Self-Hosted AI Assistant Details →</a>
+<section class="how-it-works">
+<h2>How Self-Hosted AI Assistant Works</h2>
+<div class="steps">
+<div class="step">
+<div class="step-number">1</div>
+<h3>Unbox Your Private AI</h3>
+<p>Connect ClawBox to power and network. OpenClaw boots with LLMs pre-installed. Your self-hosted AI assistant is ready in minutes.</p>
+</div>
+<div class="step">
+<div class="step-number">2</div>
+<h3>Configure Privacy Settings</h3>
+<p>Set up local-only processing, disable telemetry, and configure your preferred messaging platforms. Everything stays on your network.</p>
+</div>
+<div class="step">
+<div class="step-number">3</div>
+<h3>Connect Your Apps</h3>
+<p>Add Telegram bots, WhatsApp Business API, Discord webhooks, or use the web interface. One self-hosted box, all your platforms.</p>
+</div>
+<div class="step">
+<div class="step-number">4</div>
+<h3>Enjoy True Privacy</h3>
+<p>Your self-hosted AI assistant learns from you without sending data anywhere. Conversations, automations, and insights stay private forever.</p>
+</div>
+</div>
 </section>
 
+<section class="comparison-section">
+<h2>Self-Hosted vs Cloud AI Assistants</h2>
+<table class="comparison-table">
+<thead>
+<tr>
+<th>Feature</th>
+<th class="highlight">Self-Hosted ClawBox</th>
+<th>ChatGPT Plus</th>
+<th>Claude Pro</th>
+<th>Google Gemini</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monthly Cost</td>
+<td class="highlight">€0 (€399 one-time)</td>
+<td>$20/month</td>
+<td>$20/month</td>
+<td>$20/month</td>
+</tr>
+<tr>
+<td>Data Privacy</td>
+<td class="highlight">100% Local</td>
+<td>Stored on servers</td>
+<td>Stored on servers</td>
+<td>Stored on servers</td>
+</tr>
+<tr>
+<td>Internet Required</td>
+<td class="highlight">No (optional)</td>
+<td>Yes, always</td>
+<td>Yes, always</td>
+<td>Yes, always</td>
+</tr>
+<tr>
+<td>Custom Models</td>
+<td class="highlight">Full control</td>
+<td>Limited</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Browser Automation</td>
+<td class="highlight">Built-in</td>
+<td>None</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Multi-Platform</td>
+<td class="highlight">Telegram/WhatsApp/Discord</td>
+<td>Web only</td>
+<td>Web only</td>
+<td>Web only</td>
+</tr>
+<tr>
+<td>Annual Cost (3 years)</td>
+<td class="highlight">€399 total</td>
+<td>$720 total</td>
+<td>$720 total</td>
+<td>$720 total</td>
+</tr>
+</tbody>
+</table>
+</section>
 
-<div class="related-sites" style="text-align:center;padding:30px 20px;border-top:1px solid rgba(255,107,53,0.15)">
-  <p style="color:#6b7280;font-size:.85rem;margin-bottom:10px">Related Resources:</p>
-  <a href="https://home-ai-assistant.com" style="color:#ff6b35;text-decoration:none;margin:0 10px">Home AI Assistant</a>
-  <a href="https://diy-ai-assistant.com" style="color:#ff6b35;text-decoration:none;margin:0 10px">DIY AI Assistant</a>
-  <a href="https://openclaw-hardware.com" style="color:#ff6b35;text-decoration:none;margin:0 10px">OpenClaw Hardware</a>
+<section class="faq-section">
+<h2>Self-Hosted AI Assistant FAQ</h2>
+
+<div class="faq-item">
+<details>
+<summary>What does "self-hosted AI assistant" actually mean?</summary>
+<div class="faq-content">
+<p>A self-hosted AI assistant runs entirely on your own hardware — no cloud servers, no external APIs, no data leaving your network. The ClawBox contains everything needed: AI models, processing power, and software. Your conversations and data never touch the internet unless you specifically choose to share something.</p>
 </div>
-<p class="redirect">⏳ Redirecting to openclawhardware.dev/self-hosted-ai...</p>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>How is self-hosted AI more private than cloud services?</summary>
+<div class="faq-content">
+<p>Cloud AI services like ChatGPT, Claude, or Gemini process your conversations on their servers, potentially training on your data. A self-hosted AI assistant processes everything locally. Your conversations, documents, and automation scripts stay on your device. No external company has access to your AI interactions.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>Can a self-hosted AI assistant match cloud AI performance?</summary>
+<div class="faq-content">
+<p>For most daily tasks, yes. The ClawBox with NVIDIA Jetson Orin Nano (67 TOPS) can run powerful language models locally. While extremely large models require cloud resources, most users find local models like Llama, Mistral, or Code Llama sufficient for writing, analysis, coding, and automation — with the bonus of complete privacy.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>How much does it cost to run a self-hosted AI assistant?</summary>
+<div class="faq-content">
+<p>ClawBox costs €399 one-time, then approximately €15/year in electricity (15W continuous draw). Compare to ChatGPT Plus at $240/year — your self-hosted AI assistant pays for itself in less than 2 years, while providing superior privacy and no usage limits.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>Is self-hosted AI difficult to set up and maintain?</summary>
+<div class="faq-content">
+<p>Not with ClawBox. Unlike DIY solutions requiring Linux expertise, ClawBox comes with OpenClaw pre-installed and configured. Connect power, plug in ethernet, and your self-hosted AI assistant is running in minutes. Software updates are automatic, and the system is designed for non-technical users.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>What platforms work with self-hosted AI assistants?</summary>
+<div class="faq-content">
+<p>OpenClaw supports Telegram, WhatsApp Business API, Discord, and a web interface. You can use your self-hosted AI assistant from any device — phone, laptop, tablet — while keeping all processing on your local ClawBox. Multiple users can connect to the same self-hosted instance.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>Can I customize my self-hosted AI assistant?</summary>
+<div class="faq-content">
+<p>Absolutely. OpenClaw is open-source (MIT license) with 184K+ GitHub stars. Install different AI models, create custom automations, add plugins, or modify the interface. Your self-hosted AI assistant grows with your needs — no vendor lock-in, no feature restrictions.</p>
+</div>
+</details>
+</div>
+
+<div class="faq-item">
+<details>
+<summary>What happens if my internet goes down?</summary>
+<div class="faq-content">
+<p>Your self-hosted AI assistant continues working! Unlike cloud services, ClawBox processes everything locally. You can still chat, run automations, analyze documents, and use all AI features without internet. Only external web browsing requires connectivity — the core AI functionality is fully offline.</p>
+</div>
+</details>
+</div>
+</section>
+
+<section class="related-section">
+<h2>Related Resources</h2>
+<div class="related-links">
+<a href="https://home-ai-assistant.com">Home AI Assistant Solutions</a>
+<a href="https://personal-ai-server.com">Personal AI Server Guide</a>
+<a href="https://local-ai-box.com">Local AI Box Comparison</a>
+<a href="https://openclawhardware.dev/compare">Compare AI Hardware</a>
+<a href="https://openclawhardware.dev/setup-guide">Self-Hosted Setup Guide</a>
+<a href="https://openclawhardware.dev/compare/cloud-ai">Cloud AI vs Local</a>
+</div>
+</section>
+
+<section class="cta">
+<h2>Self-Hosted AI Assistant — €399</h2>
+<a href="https://openclawhardware.dev/" target="_blank">Get ClawBox →</a>
+</section>
 </body>
 </html>
